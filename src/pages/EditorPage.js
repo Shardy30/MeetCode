@@ -71,7 +71,7 @@ const EditorPage = () => {
             socketRef.current.off(ACTIONS.JOINED);
             socketRef.current.off(ACTIONS.DISCONNECTED);
         };
-    }, []);
+    }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
     async function copyRoomId() {
         try {
